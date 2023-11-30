@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231129220241">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231129220241">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231130142151">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231130142151">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Food Lover</title>
   </head>
   <body> 
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text preloader-heart"><img src="img/preloader.png" alt="Food Lover"></div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="container"> 
         <nav> 
-          <div class="nav-logo"> <a href="#"> <img src="img/logo.svg" alt="Food Lover"></a></div>
+          <div class="nav-logo"> 
+            <div class="logo-container">
+              <svg class="logo-text" id="draw-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 60" width="200" height="60">
+                <text class="draw" x="10" y="40">Foodlover.com</text>
+              </svg>
+            </div>
+          </div>
           <div class="nav-menu">
             <ul> 
               <li><a class="heart-btn" href="#"> Home<span class="heart-icon"></span></a></li>
@@ -155,9 +169,206 @@
           </div>
         </div>
       </section>
+      <section class="delivery"> 
+        <div class="container"> 
+          <div class="delivery-wrapp">
+            <div class="delivery-img"> <img src="img/delivery.png" alt="Delivery"></div>
+            <div class="delivery-text"> 
+              <h3 class="section-title_big section-title">Stay At Home. We Will Provide <span>Good Food</span></h3>
+              <p>We provide tasty food and super fast delivery at your home. Let use our service right Now and get 50% Discount</p>
+              <div class="main-btn-wrapp">
+                <button class="main-btn">Order Now <img src="img/arrow-right.svg" alt="Order"></button><img class="circle" src="img/circle.svg" alt="Circle">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about"> 
+        <div class="container">
+          <div class="about-title">
+            <h3 class="section-title section-title_big">Introduce with Our <span>Famous Chef</span></h3>
+          </div>
+          <div class="about-wrapp"> 
+            <div class="about-item"> 
+              <div>    <img src="img/cook-1.png" alt="Cook"></div>
+              <h6>Shaapir Prio</h6>
+              <p>Head Chef</p>
+            </div>
+            <div class="about-item"> 
+              <div>    <img src="img/cook-2.png" alt="Cook"></div>
+              <h6>Sellina</h6>
+              <p>Chef</p>
+            </div>
+            <div class="about-item"> 
+              <div>    <img src="img/cook-3.png" alt="Cook"></div>
+              <h6>John Smith</h6>
+              <p>Assistant Chef</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedbacks"> 
+        <div class="container">
+          <div class="feedback-title"> 
+            <h3 class="section-title section-title_big">We Care About Our <span>Customers Experience</span> Too</h3>
+          </div>
+          <div class="feedback-slides"> 
+            <div class="feedback-slide-wrapp"> 
+              <div class="feedback-slide">
+                <div class="wrapper"> <img src="img/photo-1.png" alt="Client">
+                  <div class="text-wrapp"> 
+                    <h6>Sameer Madhani</h6>
+                    <p>One Year With Us</p>
+                  </div>
+                  <div class="svg-wrapp"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+<path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+<path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+</svg>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p>Really nice place with garden and party faculty you can celebrate your birthday, anniversary etc. </p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-slide-wrapp"> 
+              <div class="feedback-slide">
+                <div class="wrapper"> <img src="img/photo-2.png" alt="Client">
+                  <div class="text-wrapp"> 
+                    <h6>Lina James</h6>
+                    <p>Two Year With Us</p>
+                  </div>
+                  <div class="svg-wrapp"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+<path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+<path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+</svg>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p>Absolutely loved the cozy atmosphere of this cafe. Perfect spot to relax and catch up with friends. Highly recommended!</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-slide-wrapp"> 
+              <div class="feedback-slide">
+                <div class="wrapper"> <img src="img/photo-3.png" alt="Client">
+                  <div class="text-wrapp"> 
+                    <h6>Isabella Swan</h6>
+                    <p>One Year With Us</p>
+                  </div>
+                  <div class="svg-wrapp"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+<path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+<path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+</svg>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p> Great ambiance, friendly staff, and an ideal place for celebrations. We celebrated our anniversary here.</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-slide-wrapp"> 
+              <div class="feedback-slide">
+                <div class="wrapper"> <img src="img/photo-4.jpg" alt="Client">
+                  <div class="text-wrapp"> 
+                    <h6>Jade Adams</h6>
+                    <p>One Year With Us</p>
+                  </div>
+                  <div class="svg-wrapp"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+<path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+<path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+</svg>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p>Fantastic venue with top-notch party facilities! We hosted a birthday bash here, and it was a huge success. </p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-slide-wrapp"> 
+              <div class="feedback-slide">
+                <div class="wrapper"> <img src="img/photo-5.jpg" alt="Client">
+                  <div class="text-wrapp"> 
+                    <h6>Sam Smith</h6>
+                    <p>Half of Year With Us</p>
+                  </div>
+                  <div class="svg-wrapp"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+<path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+<path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+</svg>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p>This place is a real find! The garden adds such a lovely touch to the overall atmosphere. It was the perfect choice.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="download"> 
+        <div class="container"> 
+          <div class="download-wrapper">
+            <div class="download-text-wrapp"> 
+              <h3 class="section-title">Restaurants in <span>your pocket</span></h3>
+              <p>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
+              <div class="button-wrapp"> 
+                <button> <img src="img/button-1.png" alt="Google Play"></button>
+                <button> <img src="img/button-2.png" alt="App Store"></button>
+              </div>
+            </div>
+            <div class="download-img-wrapp"> <img src="img/phones.png" alt="Phone"></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer> 
+      <div class="container">
+        <div class="footer-wrapper"> 
+          <div class="footer-info"> 
+            <div class="footer-logo"> <a href="#"><img src="img/footer-logo.svg" alt="FoodLover"></a></div>
+            <p>A perfect place for perfect food, all kind of parties and any other gathering as well, for our guests to simply unwind and relax in complete serenity.</p>
+            <div class="footer-social"> 
+              <div class="social-item"> <a href="#"> <img src="img/google.svg" alt="Google"></a></div>
+              <div class="social-item"> <a href="#"> <img src="img/twitter.svg" alt="Twitter"></a></div>
+              <div class="social-item"> <a href="#"> <img src="img/inst.svg" alt="Instagram"></a></div>
+              <div class="social-item"> <a href="#"> <img src="img/link.svg" alt="Linkedin"></a></div>
+            </div>
+          </div>
+          <div class="footer-links"> 
+            <p>Quick Links</p>
+            <ul> 
+              <li> <a href="#">  Menu </a></li>
+              <li> <a href="#">  Gallery</a></li>
+              <li> <a href="#">  Contact</a></li>
+              <li> <a href="#">  Order Now</a></li>
+            </ul>
+          </div>
+          <div class="footer-company"> 
+            <p>Company</p>
+            <ul> 
+              <li> <a href="#">  About </a></li>
+              <li> <a href="#">  Terms</a></li>
+              <li> <a href="#">  Privacy Policy</a></li>
+              <li> <a href="#">  Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <p>Contact</p>
+            <ul> 
+              <li> <a href="#"> <span> Call :</span> +91 9512212240</a></li>
+              <li> <a href="#">  <span> Email :</span> foodloversksb@gmail.com</a></li>
+              <li> <a href="#">  <span> Address :</span> Food Lovers, The Family Garden Restaurant, Kuwarda Chowkdi, Kosamba.</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright"> 
+          <p>Copyright © 2021 Food Lovers All Rights Reserved Designed By Ajay Mongia</p>
+        </div>
+      </div>
+    </footer>
   </body>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231129220241" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20231129220241"></script>
-  <script src="js/app.min.js?_v=20231129220241"> </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231130142151" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20231130142151"></script>
+  <script src="js/app.min.js?_v=20231130142151"> </script>
 </html>
